@@ -68,35 +68,20 @@
 			</script>
 
 			<div id="frogue-container" class="position-right-bottom"
-				data-chatbot="baebdfb3-d089-4b04-9bb2-2fd9e920a2eb"
-				data-user="me">
-			</div>
-			<script>
-				(function(d, s, id){
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) {return;}
-					js = d.createElement(s); js.id = id;
-					js.src = "https:\/\/danbee.ai/js/plugins/frogue-embed/frogue-embed.min.js";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'frogue-embed'));
-			</script>
-
-			<script>
-				function click(v) {
-					
-					if (frogueReadyFlag) {
-						if (v === 'info') {
-							froguePushEvent('clickEvent', {'name':'info'});
-						} else if (v === 'map') {
-							froguePushEvent('clickEvent', {'name':'map'});
-						} else if (v === 'contact') {
-							froguePushEvent('clickEvent', {'name':'contact'});
-						}
-					}
-
-					return false;
-				}
-			</script>
+      data-chatbot="f7e12c26-07db-4f4c-920f-44e716299b24"
+      data-user="사용자ID"
+      data-init-key="value"
+      ></div>
+<!-- data-init-식별키=값 으로 셋팅하면 챗플로우에 파라미터와 연동가능. 식별키는 소문자만 가능 -->
+<script>
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https:\/\/danbee.ai/js/plugins/frogue-embed/frogue-embed.min.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'frogue-embed'));
+</script>
 
 	</body>
 </html>
